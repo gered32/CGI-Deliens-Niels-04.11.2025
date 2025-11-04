@@ -12,3 +12,11 @@
     <h1>Document minimal en MMI</h1>
     <nav></nav>
 </header>
+
+<?php
+if (isset($_SESSION['login'])) {
+    echo "<p>Connecté en tant que " . $_SESSION['login'] . "</p>";
+} else {
+    echo '<a href="formulaire.php" style="float:right;">Connexion</a>';
+}
+?>
