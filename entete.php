@@ -20,3 +20,12 @@ if (isset($_SESSION['login'])) {
     echo '<a href="formulaire.php" style="float:right;">Connexion</a>';
 }
 ?>
+
+<?php
+if (isset($_SESSION['login'])) {
+    echo "<p>Connecté en tant que " . $_SESSION['login'] . "</p>";
+    echo '<a href="logout.php" style="float:right;">Déconnexion</a>';
+} else {
+    echo '<a href="formulaire.php" style="float:right;">Connexion</a>';
+}
+?>
