@@ -16,6 +16,9 @@
             <label for="id">Identifiant :</label>
             <input type="text" name="Identifiant" id="id" required>
 
+            <label for="pw"> Mot de passe :</label>
+            <input type="password" name="passe" id="pw" required>
+
             <input type="submit" value="Se connecter">
         </form>
         ';
@@ -30,4 +33,4 @@
     ?>
 </section>
 
-<?php include('pieddepage.php'); ?>
+<?php include('footer.php'); ?>

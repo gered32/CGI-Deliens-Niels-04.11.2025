@@ -11,4 +11,4 @@
 ?>
 </section>
 
-<?php include('pieddepage.php'); ?>
+<?php include('footer.php'); ?>

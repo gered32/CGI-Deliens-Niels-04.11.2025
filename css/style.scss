@@ -1,5 +1,5 @@
 $font-stack: 'Segoe UI', Roboto, sans-serif;
-$primary-color: #1e88e5;
+$primary-color: #064276;
 $background-color: #f7f9fb;
 $text-color: #333;
 
@@ -129,4 +129,9 @@ footer {
   &:hover {
     background: darken(#e53935, 8%);
   }
+}
+
+#goat {
+    height: 10vh;
+    width: auto;
 }

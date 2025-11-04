@@ -9,15 +9,15 @@
 </head>
 <body>
 <header>
-    <h1>Document minimal en MMI</h1>
-    <nav></nav>
+    <h1>Face Bouc</h1>
+    <nav><img id="goat" src="./4081988.png" alt=""></nav>
 </header>
 
 <?php
 if (isset($_SESSION['login'])) {
-    echo "<p>Connecté en tant que " . $_SESSION['login'] . "</p>";
-    echo '<a href="logout.php" style="float:right;">Déconnexion</a>';
+    echo '<p style="text-align:right;">Connecté en tant que ' , $_SESSION['login'] , "</p>";
+    echo '<p style="text-align:right;"><a href="logout.php" >Déconnexion</a></p>';
 } else {
-    echo '<a href="formulaire.php" style="float:right;">Connexion</a>';
+    echo '<p style="text-align:right;"><a href="formulaire.php">Connexion</a></p>';
 }
 ?>
