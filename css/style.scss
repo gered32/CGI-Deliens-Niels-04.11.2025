@@ -115,3 +115,18 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+.btn-deconnexion {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #e53935;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    background: darken(#e53935, 8%);
+  }
+}
