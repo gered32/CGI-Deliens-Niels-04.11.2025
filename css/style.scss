@@ -1,0 +1,117 @@
+$font-stack: 'Segoe UI', Roboto, sans-serif;
+$primary-color: #1e88e5;
+$background-color: #f7f9fb;
+$text-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: $primary-color;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background: white;
+      color: $primary-color;
+    }
+  }
+}
+
+section {
+  flex: 1;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: 600;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba($primary-color, 0.15);
+    }
+  }
+
+  input[type="submit"] {
+    background: $primary-color;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken($primary-color, 8%);
+    }
+  }
+}
+
+footer {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #666;
+}
