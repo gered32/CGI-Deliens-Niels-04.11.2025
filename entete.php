@@ -15,7 +15,7 @@
 
 <?php
 if (isset($_SESSION['login'])) {
-    echo '<p style="text-align:right;">Connecté en tant que ' , $_SESSION['login'] , "</p>";
+    echo '<p id="tantque" style="text-align:right;">Connecté en tant que ' , $_SESSION['login'] , "</p>";
     echo '<p style="text-align:right;"><a href="logout.php" >Déconnexion</a></p>';
 } else {
     echo '<p style="text-align:right;"><a href="formulaire.php">Connexion</a></p>';
